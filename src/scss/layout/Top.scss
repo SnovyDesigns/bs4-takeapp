@@ -1,0 +1,64 @@
+.Top {
+  height: 81rem;
+  background: iurl('top.jpg') no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+  padding-top: 5.6rem;
+
+  .logo {
+    font-family: 'Merriweather', serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: #ffffff;
+    }
+
+    .logo-icon {
+      @include size(4.1, 4.1);
+      background: iurl('logo-icon.svg');
+      background-size: cover;
+    }
+  }
+
+  h1 {
+    font-size: $fd-xxl;
+    font-weight: $fw-l;
+    text-shadow: 1px 1px 0 rgba($color: #000000, $alpha: 0.4);
+  }
+
+  p {
+    font-size: $fd-md;
+    font-weight: $fw-r;
+    line-height: 2.4rem;
+  }
+
+  .scroll-up {
+    display: none;
+    @include size(3.8, 3.6);
+    background: iurl('scroll-icon.svg');
+    background-size: cover;
+    @include marg(5);
+  }
+}
+
+@media (max-width: 991px) {
+  .Top {
+    h1 {
+      font-size: $ft-xxl;
+    }
+
+    p {
+      font-size: $ft-md;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .Top {
+    height: 100vh;
+  }
+}
