@@ -1,3 +1,33 @@
 html {
   font-size: 62.5%;
 }
+
+// *** FONTS IMPORT ***
+
+// BASE FONT - Open Sans
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+// LOGO FONT - Merriweather
+@import url('https://fonts.googleapis.com/css?family=Merriweather:700i');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+// *** FONTS VARIABLES ***
+
+// Font Sizes - DESKTOP
+$fd-xs: 1.1rem;
+$fd-sm: 1.2rem;
+$fd-md: 1.3rem;
+$fd-lg: 3rem;
+$fd-xl: 3.5rem;
+$fd-xxl: 6rem;
+
+// Fonts Weight
+$fw-l: 300;
+$fw-r: 400;
+$fw-sb: 600;
+$fw-b: 700;
+$fw-eb: 800;
