@@ -6,18 +6,32 @@
 
 .btn {
   display: inline-block;
-  font-weight: $btn-font-weight;
+  font-weight: 700;
+  background-color: $success;
+  color: #ffffff;
+  width: 15rem;
+  height: 4.7rem;
+  text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
   border: $btn-border-width solid transparent;
-  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
+  @include button-size(
+    $btn-padding-y,
+    $btn-padding-x,
+    $font-size-base,
+    $btn-line-height,
+    $btn-border-radius
+  );
   @include transition($btn-transition);
 
   // Share hover and focus styles
   @include hover-focus {
     text-decoration: none;
+  }
+  &:hover {
+    background-color: #77b88e;
   }
 
   &:focus,
@@ -54,7 +68,6 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
-
 //
 // Alternate buttons
 //
@@ -71,14 +84,14 @@ fieldset:disabled a.btn {
   }
 }
 
-
 //
 // Link buttons
 //
 
 // Make a button look and behave like a link
 .btn-link {
-  font-weight: $font-weight-normal;
+  font-weight: 700;
+  line-height: 2.4rem;
   color: $link-color;
   background-color: transparent;
 
@@ -105,19 +118,29 @@ fieldset:disabled a.btn {
   // No need for an active state here
 }
 
-
 //
 // Button Sizes
 //
 
 .btn-lg {
-  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
+  @include button-size(
+    $btn-padding-y-lg,
+    $btn-padding-x-lg,
+    $font-size-lg,
+    $btn-line-height-lg,
+    $btn-border-radius-lg
+  );
 }
 
 .btn-sm {
-  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+  @include button-size(
+    $btn-padding-y-sm,
+    $btn-padding-x-sm,
+    $font-size-sm,
+    $btn-line-height-sm,
+    $btn-border-radius-sm
+  );
 }
-
 
 //
 // Block button
@@ -134,9 +157,9 @@ fieldset:disabled a.btn {
 }
 
 // Specificity overrides
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+input[type='submit'],
+input[type='reset'],
+input[type='button'] {
   &.btn-block {
     width: 100%;
   }
