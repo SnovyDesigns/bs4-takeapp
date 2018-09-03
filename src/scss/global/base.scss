@@ -1,6 +1,6 @@
 html {
   font-size: 62.5%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 // *** FONTS IMPORT ***
@@ -14,6 +14,8 @@ html {
 // *** BASE FONT SIZES ***
 $base-fs: 1.5rem;
 $base-fs-mobile: 1.7rem;
+
+$base-lh: 2.4rem;
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -31,8 +33,8 @@ body {
 // *** FONTS VARIABLES ***
 
 // Font Sizes - DESKTOP
-$fd-xs: 1.1rem;
-$fd-sm: 1.2rem;
+$fd-xs: 1.2rem;
+$fd-sm: 1.3rem;
 $fd-md: 1.4rem;
 $fd-lg: 3rem;
 $fd-xl: 3.5rem;
@@ -48,3 +50,7 @@ $fw-r: 400;
 $fw-sb: 600;
 $fw-b: 700;
 $fw-eb: 800;
+
+// Font Colors
+$font-light: #959595;
+$font-dark: #8297a7;

@@ -54,3 +54,12 @@ html(lang="en")
             - const cards2 = [{color: "image2", title: "Sign up & see why", link: "Get Started Now "}, {color: "bg-success", title: "Perfect pictures"}, {color: "image3", title: "Start something new", }];
             for card in cards2
               +card(card)
+    
+    section.Details
+      .container
+        h1 A look at the details
+        .row
+          for title in ["Web based", "Performance", "Clultral", "Sustainability"]
+            .col-md-6.col-lg-3.mb-5.mb-lg-0
+              h3 #{title}
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 

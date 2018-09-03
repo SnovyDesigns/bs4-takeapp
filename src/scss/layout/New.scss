@@ -4,12 +4,12 @@
   h1 {
     font-size: $fd-xl;
     font-weight: $fw-l;
-    line-height: 2.4rem;
+    line-height: $base-lh;
   }
 
   p {
-    color: #959595;
-    line-height: 2.4rem;
+    color: $font-light;
+    line-height: $base-lh;
     @include marg(2.5);
   }
 

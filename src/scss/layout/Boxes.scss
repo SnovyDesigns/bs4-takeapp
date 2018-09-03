@@ -30,7 +30,7 @@
   .card-text {
     font-size: $fd-md;
     font-weight: $fw-r;
-    line-height: 2.4rem;
+    line-height: $base-lh;
   }
 
   .card-body {
@@ -82,7 +82,7 @@
 
 @media (max-width: 991px) {
   .Boxes {
-    @include marg(5, 5.5);
+    @include marg(7.5, 5.5);
 
     .card-text {
       font-size: $ft-md;
