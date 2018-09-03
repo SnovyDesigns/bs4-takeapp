@@ -1,0 +1,95 @@
+.Boxes {
+  @include marg(8, 7.5);
+
+  #slider1,
+  #slider2 {
+    overflow: hidden;
+    width: 300rem;
+  }
+
+  .card {
+    flex: 0;
+    float: left;
+    border: 0;
+    border-radius: 0;
+    color: #ffffff;
+    @include size(40, 27);
+
+    &:hover {
+      .icon-heart {
+        display: block;
+      }
+    }
+  }
+
+  .card-title {
+    font-size: $fd-lg;
+    font-weight: $fw-l;
+  }
+
+  .card-text {
+    font-size: $fd-md;
+    font-weight: $fw-r;
+    line-height: 2.4rem;
+  }
+
+  .card-body {
+    @include padd(4.1, 4, 4, 5);
+    position: relative;
+  }
+
+  .btn-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .link-arrow {
+    display: block;
+    @include size(1.6, 1);
+    background: iurl('link-arrow.svg');
+    margin-left: 1rem;
+  }
+
+  .icon-heart {
+    display: none;
+    position: absolute;
+    right: 4.3rem;
+    bottom: 4.3rem;
+    @include size(2, 1.8);
+    background: iurl('heart-icon.svg');
+  }
+
+  .image2,
+  .image3 {
+    @include size(80, 27);
+  }
+
+  .image1 {
+    background-image: iurl('image1.jpg');
+    background-size: cover;
+  }
+
+  .image2 {
+    background-image: iurl('image2.jpg');
+    background-size: cover;
+  }
+
+  .image3 {
+    background-image: iurl('image3.jpg');
+    background-size: cover;
+  }
+}
+
+@media (max-width: 991px) {
+  .Boxes {
+    @include marg(5, 5.5);
+
+    .card-text {
+      font-size: $ft-md;
+    }
+    .image2,
+    .image3 {
+      @include size(40, 27);
+    }
+  }
+}

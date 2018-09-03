@@ -1,3 +1,5 @@
+include ./includes/card
+
 doctype html
 html(lang="en")
   head
@@ -26,7 +28,7 @@ html(lang="en")
 
     section.New
       .container
-        h1.mb-3 Start something new
+        h1.mb-3#base Start something new
         .row
           .col-md-8.col-lg-6.align-self-end
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -39,3 +41,16 @@ html(lang="en")
           .col-lg-6.d-none.d-lg-block
             p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
             p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+
+    section.Boxes
+      #sliders
+        #slider1
+          #slider1-container
+            - const cards1 = [{color: "bg-danger", title: "Design quality"}, {color: "bg-secondary", title: "Built to last"}, {color: "image1", title: "Our clients", text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt", link: "Get insights"}, {color: "bg-info", title: "How to show great"}];
+            for card in cards1
+              +card(card)
+        #slider2
+          #slider2-container
+            - const cards2 = [{color: "image2", title: "Sign up & see why", link: "Get Started Now "}, {color: "bg-success", title: "Perfect pictures"}, {color: "image3", title: "Start something new", }];
+            for card in cards2
+              +card(card)

@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  overflow: hidden;
 }
 
 // *** FONTS IMPORT ***
@@ -11,8 +12,8 @@ html {
 @import url('https://fonts.googleapis.com/css?family=Merriweather:700i');
 
 // *** BASE FONT SIZES ***
-$base-fs: 1.4rem;
-$base-fs-mobile: 1.6rem;
+$base-fs: 1.5rem;
+$base-fs-mobile: 1.7rem;
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -32,14 +33,14 @@ body {
 // Font Sizes - DESKTOP
 $fd-xs: 1.1rem;
 $fd-sm: 1.2rem;
-$fd-md: 1.3rem;
+$fd-md: 1.4rem;
 $fd-lg: 3rem;
 $fd-xl: 3.5rem;
 $fd-xxl: 6rem;
 
 // Font Sizes - TABLET
 $ft-xxl: 5.5rem;
-$ft-md: 1.5rem;
+$ft-md: 1.6rem;
 
 // Fonts Weight
 $fw-l: 300;

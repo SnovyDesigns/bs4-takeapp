@@ -1,0 +1,10 @@
+mixin card(card)
+  .card(class=`${card.color}`)
+    .card-body.d-flex.flex-column
+      h4.card-title.mb-2 #{card.title}
+      p.card-text= `${card.text != undefined ? card.text : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing."}` 
+      a.btn-link.mt-auto(href="#")
+        = `${card.link != undefined ? card.link : "Find Out more"}`  
+        i.link-arrow 
+      a.icon-heart.ml-auto(href="#")
+  
