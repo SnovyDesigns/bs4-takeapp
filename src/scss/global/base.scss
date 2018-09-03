@@ -10,9 +10,21 @@ html {
 // LOGO FONT - Merriweather
 @import url('https://fonts.googleapis.com/css?family=Merriweather:700i');
 
+// *** BASE FONT SIZES ***
+$base-fs: 1.4rem;
+$base-fs-mobile: 1.6rem;
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  font-size: $base-fs;
+  overflow-x: hidden;
+}
+
+@media (max-width: 991px) {
+  body {
+    font-size: $base-fs-mobile;
+  }
 }
 
 // *** FONTS VARIABLES ***

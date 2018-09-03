@@ -1,0 +1,55 @@
+.New {
+  padding-top: 11.3rem;
+
+  h1 {
+    font-size: $fd-xl;
+    font-weight: $fw-l;
+    line-height: 2.4rem;
+  }
+
+  p {
+    color: #959595;
+    line-height: 2.4rem;
+    @include marg(2.5);
+  }
+
+  .phone {
+    position: relative;
+  }
+
+  .phone-image {
+    position: absolute;
+    @include size(82, 85);
+    left: -5rem;
+    top: -77rem;
+    background: iurl('iPhone.png') no-repeat;
+    background-size: contain;
+  }
+}
+
+@media (min-width: 992px) {
+  .New {
+    .phone-image {
+      @include size(72, 74);
+      top: -65rem;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .New {
+    padding-top: 8rem;
+
+    .phone-image {
+      @include size(62, 64);
+      top: -50rem;
+      left: -20rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .New {
+    padding-top: 5rem;
+  }
+}
