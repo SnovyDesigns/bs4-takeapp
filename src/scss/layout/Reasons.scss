@@ -1,0 +1,32 @@
+.Reasons {
+  @include padd(12.5, 14);
+
+  h2 {
+    font-size: $fd-xl;
+    font-weight: $fw-l;
+    line-height: 4rem;
+    @include marg(6.8);
+  }
+
+  h3 {
+    font-size: $fd-md;
+    font-weight: $fw-sb;
+    line-height: $base-lh;
+    @include marg(2.8);
+  }
+
+  p {
+    color: $font-light;
+  }
+}
+
+@media (max-width: 991px) {
+  .Reasons {
+    @include padd(8.5, 10);
+
+    h3 {
+      font-size: $ft-md;
+      @include marg(2);
+    }
+  }
+}
