@@ -41,8 +41,6 @@ window.onload = function() {
     return array.reduce((prevVal, val) => prevVal + val);
   }
 
-  console.log(`Slider1: ${widthArray}`);
-
   sliderList.css('width', sum(widthArray));
 
   function moveSlide() {
@@ -86,8 +84,6 @@ window.onload = function() {
   }
 
   sliderList2.css('width', sum(widthArray2));
-
-  console.log(`Slider1: ${widthArray2}`);
 
   function moveSlide2() {
     firstItem2 = sliderList2.find('.card:first');

@@ -100,3 +100,39 @@ html(lang="en")
                   .icons.d-flex.mt-2
                     i.apple-icon.mr-2
                     i.windows-icon
+    
+    footer.Footer.bg-dark.text-white
+      .container
+        .row
+          .col-lg-6.mb-5.mb-lg-0
+            .row
+              .col
+                h2.mb-3 Get in touch
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            .row.d-none.d-md-flex
+              for heading in ["Resources", "Features", "How To’s"]
+                .col-4
+                  h3.mb-3 #{heading}
+                  ul.list-unstyled
+                    for link in ["Tour", "Customers", "Pricing and Plans", "New Features", "Education"]
+                      li.mb-1
+                        a.link(href="#") #{link}
+            .row.d-flex.d-md-none
+              .col
+                ul.list-unstyled
+                  for link in ["Check Our Resources", "Discover All Features", "Need Help? - How To’s"]
+                    li.mb-2
+                      a.btn-link.justify-content-center(href="#")
+                        span #{link}
+                        i.link-arrow 
+          .col-lg-5.offset-lg-1
+             .row
+              .col
+                h2.mb-3 Stay in touch
+                .input-group.mb-2
+                  input.form-control(type='email')
+                  .input-group-prepend
+                    button.btn-lg(type='button')
+                      i.check-icon.mx-1
+                p.info We don’t send spam. Actually, who are we kiding, we’ll spam out of you’r inbox 
+

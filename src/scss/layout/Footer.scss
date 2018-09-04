@@ -1,0 +1,80 @@
+.Footer {
+  @include padd(13, 16);
+
+  h2,
+  h3 {
+    font-size: $fd-md;
+    font-weight: $fw-sb;
+    line-height: $base-lh;
+  }
+
+  p,
+  .link {
+    font-size: $fd-md;
+    font-weight: $fw-r;
+    line-height: $base-lh;
+  }
+
+  p {
+    @include marg(7);
+  }
+
+  .link:hover {
+    @include trans;
+
+    &:hover {
+      color: #f1f2f6;
+    }
+  }
+
+  .btn-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .link-arrow {
+    display: block;
+    @include size(1.6, 1);
+    background: iurl('link-arrow.svg');
+    margin-left: 1rem;
+  }
+
+  .info {
+    font-size: $fd-sm;
+    font-weight: $fw-r;
+    line-height: 1.8rem;
+    color: #57697f;
+  }
+
+  button {
+    background: #82ca9c;
+    border-radius: 0 0.3rem 0.3rem 0;
+    border: 0;
+    border-left: 1px solid darken($color: #82ca9c, $amount: 10%);
+  }
+
+  .check-icon {
+    display: block;
+    @include size(2.4, 1.8);
+    background: iurl('check-icon.svg');
+    background-size: contain;
+  }
+}
+
+@media (max-width: 991px) {
+  .Footer {
+    @include padd(7, 10);
+
+    h2,
+    h3,
+    p {
+      font-size: $ft-md;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .Footer {
+    @include padd(5, 3);
+  }
+}
