@@ -118,8 +118,8 @@
   $border-radius
 ) {
   padding: $padding-y $padding-x;
-  font-size: 1.3rem;
-  line-height: 2.2rem;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
   // Manually declare to provide an override to the browser default
   @if $enable-rounded {
     border-radius: 0.3rem;

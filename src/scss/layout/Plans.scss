@@ -1,0 +1,59 @@
+.Plans {
+  @include padd(10, 18);
+
+  .card {
+    @include padd(4, 4, 4.5, 4.5);
+    background: transparent;
+    @include trans;
+
+    &:hover {
+      background: #ffffff;
+      box-shadow: 0 0 62px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  .badge,
+  h2,
+  p {
+    @include marg(2.5);
+  }
+
+  .card-title {
+    font-size: $fd-lg;
+    font-weight: $fw-l;
+    line-height: 4rem;
+    color: #2e3b4e;
+  }
+
+  p {
+    color: #8297a7;
+  }
+
+  .apple-icon {
+    display: block;
+    @include size(2, 2.5);
+    background: iurl('apple-icon.svg');
+    background-size: contain;
+  }
+
+  .windows-icon {
+    display: block;
+    @include size(2.4, 2.4);
+    background: iurl('windows-icon.svg');
+    background-size: contain;
+  }
+}
+
+@media (max-width: 992px) {
+  .Plans {
+    @include padd(5, 9);
+
+    .card {
+      @include padd(2, 2, 2.5, 2.5);
+    }
+
+    .card1 {
+      background: #ffffff;
+    }
+  }
+}

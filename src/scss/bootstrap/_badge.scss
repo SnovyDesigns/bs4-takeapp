@@ -5,13 +5,14 @@
 
 .badge {
   display: inline-block;
-  padding: $badge-padding-y $badge-padding-x;
+  padding: 0.555em 0.8em 0.5em;
   font-size: $badge-font-size;
   font-weight: $badge-font-weight;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
+  text-transform: uppercase;
   @include border-radius($badge-border-radius);
 
   // Empty badges collapse automatically

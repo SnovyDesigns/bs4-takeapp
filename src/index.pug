@@ -85,3 +85,18 @@ html(lang="en")
             .col-lg-4.mb-5.mb-lg-0
               h3 #{title}
               p.text-white Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    
+    section.Plans.bg-light
+      .container
+        .row
+          for plan, index in [{badge: "Legacy", header: "Go it solo", price: "9", color: "badge-warning"}, {badge: "Most popular", header: "Team Plan", price: "18", color: "badge-info"}]
+            .col-lg-6.mb-2.mb-lg-0
+              .card.border-0(class=`card${index}`)
+                .card-body
+                  span.badge.text-white(class=`${plan.color}`) #{plan.badge}
+                  h2.card-title #{plan.header}
+                  p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                  a.btn(href="#")= `Buy now $${plan.price}`
+                  .icons.d-flex.mt-2
+                    i.apple-icon.mr-2
+                    i.windows-icon
