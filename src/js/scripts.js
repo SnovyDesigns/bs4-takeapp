@@ -1,7 +1,5 @@
 import $ from 'jquery';
 
-$('#year').text(new Date().getFullYear());
-
 window.onload = function() {
   var base = document.getElementById('base');
   var posX = base.getBoundingClientRect().x;
