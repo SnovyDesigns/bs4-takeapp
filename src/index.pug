@@ -28,7 +28,7 @@ html(lang="en")
 
     section.New
       .container
-        h1.mb-3#base Start something new
+        h2.mb-3#base Start something new
         .row
           .col-md-8.col-lg-6.align-self-end
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -57,9 +57,22 @@ html(lang="en")
     
     section.Details
       .container
-        h1 A look at the details
+        h2 A look at the details
         .row
           for title in ["Web based", "Performance", "Clultral", "Sustainability"]
             .col-md-6.col-lg-3.mb-5.mb-lg-0
               h3 #{title}
               p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    
+    section.Showcase
+      .container.h-100
+        .row.h-100
+          .col.col-md-7.col-xl-6.align-self-end
+            h1.mb-3 
+              | More power
+              br
+              | behind every pixel.
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            a.btn-link(href="#")
+              span See the options
+              i.link-arrow  

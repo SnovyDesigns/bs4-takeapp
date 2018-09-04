@@ -1,0 +1,54 @@
+.Showcase {
+  height: 87rem;
+  padding-bottom: 13.5rem;
+  background: iurl('showcase.jpg') no-repeat;
+  background-size: cover;
+  color: #ffffff;
+
+  h1 {
+    font-size: $fd-xxl;
+    font-weight: $fw-l;
+    text-shadow: 1px 1px 0 rgba($color: #000000, $alpha: 0.4);
+  }
+
+  p {
+    font-size: $fd-md;
+    font-weight: $fw-r;
+    line-height: $base-lh;
+    margin-bottom: 2.5rem;
+  }
+
+  .btn-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .link-arrow {
+    display: block;
+    @include size(1.6, 1);
+    background: iurl('link-arrow.svg');
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .Showcase {
+    height: 60rem;
+    padding-bottom: 7.5rem;
+
+    h1 {
+      font-size: $ft-xxl;
+    }
+
+    p {
+      font-size: $ft-md;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .Showcase {
+    height: 70rem;
+    padding-bottom: 8.5rem;
+  }
+}
